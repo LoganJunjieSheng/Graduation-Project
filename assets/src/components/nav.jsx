@@ -5,6 +5,7 @@ import MenuItem from 'material-ui/MenuItem';
 // import IconButton from 'material-ui/IconButton';
 // import FontIcon from 'material-ui/FontIcon';
 import {Link} from 'react-router-dom';
+
 class MyNav extends Component {
     constructor(props) {
         super(props);
@@ -28,8 +29,10 @@ class MyNav extends Component {
                     docked={false}
                     onRequestChange={(open) => this.setState({open})}
                 >
-                    <MenuItem><Link className='link' to='cluster'>集群控制</Link></MenuItem>
-                    <MenuItem>权限管理</MenuItem>
+                    <Link className='link' to='cluster'> <MenuItem>集群控制</MenuItem></Link>
+                    <Link className='link' to='authority'><MenuItem>权限管理</MenuItem></Link>
+                    <Link className='link' to='alert'><MenuItem>数据预警</MenuItem></Link>
+                    <Link className='link' to='visualization'><MenuItem>大数据可视化</MenuItem></Link>
                 </Drawer>
             </div>
 

@@ -3,6 +3,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import {Table} from 'reactstrap';
 import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
+import Snackbar from 'material-ui/Snackbar';
 import '../App.css';
 
 class PageClusterControl extends Component {
@@ -14,7 +15,8 @@ class PageClusterControl extends Component {
             dialog: {
                 id: '',
                 action: '',
-            }
+            },
+            snackbar:false,
         }
     }
 
@@ -31,6 +33,11 @@ class PageClusterControl extends Component {
     handleClose = () => {
         this.setState({open: false});
     };
+    handleRequestClose = () => {
+        this.setState({
+            snackbar: false,
+        });
+    };
     submit = () => {
         let that=this;
         let status = Object.assign([], this.state.status);
@@ -38,7 +45,8 @@ class PageClusterControl extends Component {
         setTimeout(function () {
                 that.setState({
                     status: status,
-                    open: false
+                    open: false,
+                    snackbar:true,
                 })
             }
             , 1000);
@@ -70,6 +78,12 @@ class PageClusterControl extends Component {
                 >
                     您是否确定{this.state.dialog.action}集群{this.state.dialog.id}
                 </Dialog>
+                <Snackbar
+                    open={this.state.snackbar}
+                    message={'集群'+this.state.dialog.id+'已经被'+this.state.dialog.action}
+                    autoHideDuration={4000}
+                    onRequestClose={this.handleRequestClose}
+                />
                 <h1 className='title-left'>集群控制</h1>
                 <Table>
                     <thead style={{textAlign: 'center'}}>

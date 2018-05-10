@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
 import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
-import {Link} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 import '../App.css';
 
 class Index extends Component {
@@ -11,6 +11,7 @@ class Index extends Component {
         this.state = {
             account: '',
             password: '',
+            redirectToReferrer: false,
         }
     }
 
@@ -21,13 +22,19 @@ class Index extends Component {
         this.setState({password: e.target.value});
     };
     signIn = () => {
-       if(this.state.account!==this.state.password){
-           alert('请检查用户名与密码')
-       }
-        console.log(123)
+        if (this.state.account !== this.state.password) {
+            alert('请检查用户名与密码')
+        } else {
+            this.setState({
+                redirectToReferrer:true,
+            })
+        }
     };
 
     render() {
+        if (this.state.redirectToReferrer) {
+            return <Redirect to='/cluster'/>;
+        }
         return (
             <div>
                 <div style={{width: '280px', margin: '100px auto 0 '}}>
