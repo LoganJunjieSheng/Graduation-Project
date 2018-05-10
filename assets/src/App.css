@@ -1,0 +1,14 @@
+.link {
+    text-decoration: none !important;
+    color: rgb(119, 119, 119);
+}
+.body {
+    width: 1200px;
+    margin: 30px auto 0;
+}
+.title-left {
+    color: #666;
+    /*font-size: 40px;*/
+    /*border-bottom: 1px solid #999;*/
+    margin-bottom: 30px;
+}
