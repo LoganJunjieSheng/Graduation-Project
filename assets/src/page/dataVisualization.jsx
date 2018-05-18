@@ -5,13 +5,18 @@ import {List, ListItem} from 'material-ui/List';
 import Subheader from 'material-ui/Subheader';
 import ReactEcharts from 'echarts-for-react';
 import '../App.css';
-import retainLineSmooth from '../echarts/retain/lineSmooth';
+import userTotal from '../echarts/user/userTotal';
+import userGrowth from "../echarts/user/userGrowth";
+import userSource from "../echarts/user/userSource";
+import userDistribution from "../echarts/user/userDistribution";
 
 class PageDataVisualization extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            option: '大数据展示'
+            option: '大数据展示',
+            userTotal:[],
+            userGrowth:[],
         }
     }
 
@@ -27,38 +32,76 @@ class PageDataVisualization extends Component {
         switch (this.state.option) {
             case '用户总数':
                 return (<ReactEcharts
-                    option={retainLineSmooth()}
+                    option={userTotal()}
+                    key={'用户总数'}
                 />);
+            case '用户增长':
+                return (<ReactEcharts
+                    option={userGrowth()}
+                    key={'用户增长'}
+                />);
+            case '用户分布':
+                return (<ReactEcharts
+                    option={userDistribution()}
+                    key={'用户分布'}
+                />);
+            case '用户来源':
+                return (<ReactEcharts
+                    option={userSource()}
+                    key={'用户来源'}
+                />);
+            default:
+                return;
         }
-    }
+    };
 
     render() {
         return (
             <div className='body'>
                 <h1 className='title-left'>大数据可视化</h1>
                 <Row>
-                    <Col xs="3">
+                    <Col xs="2">
                         <Paper>
                             <List>
                                 <Subheader>数据列表</Subheader>
                                 <ListItem primaryText="用户"
                                           nestedItems={[
-                                              <ListItem key='用户总数' primaryText="用户总数" onClick={() => {
-                                                  this.handleOption('用户总数')
-                                              }}/>,
-                                              <ListItem key='增长' primaryText="增长"/>,
-                                              <ListItem key='分布' primaryText="分布"/>,
-                                              <ListItem key='消费' primaryText="消费"/>,
+                                              <ListItem
+                                                  key='用户总数'
+                                                  primaryText="用户总数"
+                                                  onClick={() => {
+                                                      this.handleOption('用户总数')
+                                                  }}/>,
+                                              <ListItem
+                                                  key='用户增长'
+                                                  primaryText="用户增长"
+                                                  onClick={() => {
+                                                      this.handleOption('用户增长')
+                                                  }}
+                                              />,
+                                              <ListItem
+                                                  key='用户分布'
+                                                  primaryText="用户分布"
+                                                  onClick={() => {
+                                                      this.handleOption('用户分布')
+                                                  }}
+                                              />,
+                                              <ListItem
+                                                  key='用户来源'
+                                                  primaryText="用户来源"
+                                                  onClick={() => {
+                                                      this.handleOption('用户来源')
+                                                  }}
+                                              />,
                                           ]}/>
                             </List>
                         </Paper>
                     </Col>
-                    <Col xs="9">
+                    <Col xs="10">
                         <Paper style={{minHeight: '500px', padding: '0 10px'}}>
                             <Subheader>{this.state.option}</Subheader>
                             <div>
                                 {this.getEchart()}
-
                             </div>
                         </Paper>
                     </Col>

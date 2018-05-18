@@ -1,10 +1,10 @@
 import myDate from '../date'
 import myData from '../data'
-export default function retainLineSmooth() {
+
+export default function userGrowth() {
     return {
-        title : {
-            text: '用户数量曲线图',
-            // subtext: '数据来自西安兰特水电测控技术有限公司',
+        title: {
+            text: '用户增长曲线图',
             x: 'center',
             align: 'right'
         },
@@ -14,7 +14,7 @@ export default function retainLineSmooth() {
                 saveAsImage: {}
             }
         },
-        tooltip : {
+        tooltip: {
             trigger: 'axis',
             axisPointer: {
                 type: 'cross',
@@ -25,7 +25,7 @@ export default function retainLineSmooth() {
             }
         },
         legend: {
-            data:['流量'],
+            data: ['同比', '环比'],
             x: 'left'
         },
         dataZoom: [
@@ -39,18 +39,27 @@ export default function retainLineSmooth() {
             }
         ],
         xAxis: {
+            name: '日期',
             type: 'category',
             data: myDate(),
         },
         yAxis: {
-            name: '总用户(人)',
+            name: '百分比',
             type: 'value'
         },
-        series: [{
-            name:'用户人数',
-            data:  myData(1000,360,0.05),
-            type: 'line',
-            smooth: true
-        }]
+        series: [
+            {
+                name: '同比',
+                data: myData.proportion(1000,360,0.05),
+                type: 'line',
+                smooth: true
+            },
+            {
+                name: '环比',
+                data: myData.proportion(1000,360,0.05),
+                type: 'line',
+                smooth: true
+            },
+        ]
     };
 }
