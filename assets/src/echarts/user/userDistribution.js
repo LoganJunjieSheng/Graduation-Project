@@ -21,9 +21,6 @@ export default function userDistribution() {
             text: ['High', 'Low'],
             realtime: false,
             calculable: true,
-            // inRange: {
-            //     color: ['white', 'white', 'white']
-            // }
         },
         series: [
             {

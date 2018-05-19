@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "kafka-node": "^2.6.1",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.1",
+    "echarts": "^4.1.0",
+    "echarts-for-react": "^2.0.8",
+    "kafka-node": "^2.3.0",
     "material-ui": "^0.20.0",
     "react": "^16.3.2",
     "react-css-modules": "^4.7.2",

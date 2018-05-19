@@ -5,8 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-
+var kafka = require('./interface/kafka');
 var app = express();
 
 // view engine setup
@@ -19,9 +18,19 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'assets/build')));
-
+//跨域
+var allowCrossDomain = function (req, res, next) {
+    console.log(req.headers);
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type,Authorization');
+    res.header('Access-Control-Allow-Credentials', 'true');
+    next();
+};
+app.use(allowCrossDomain);
+//路由
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/kafka', kafka);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

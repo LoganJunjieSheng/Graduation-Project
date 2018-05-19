@@ -6,19 +6,12 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "bootstrap": "^4.1.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
-    "echarts": "^4.1.0",
-    "echarts-for-react": "^2.0.8",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
-    "morgan": "~1.9.0",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-router": "^4.2.0",
-    "react-select": "^1.2.1",
-    "reactstrap": "^6.0.1"
+    "kafka-node": "^2.6.1",
+    "morgan": "~1.9.0"
   }
 }

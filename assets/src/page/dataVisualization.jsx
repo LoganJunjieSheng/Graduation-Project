@@ -98,7 +98,7 @@ class PageDataVisualization extends Component {
                         </Paper>
                     </Col>
                     <Col xs="10">
-                        <Paper style={{minHeight: '500px', padding: '0 10px'}}>
+                        <Paper style={{minHeight: '400px', padding: '0 10px'}}>
                             <Subheader>{this.state.option}</Subheader>
                             <div>
                                 {this.getEchart()}
