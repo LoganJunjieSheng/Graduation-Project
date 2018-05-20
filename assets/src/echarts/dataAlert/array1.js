@@ -1,6 +1,6 @@
-export default function dataAlertArray1(data,time) {
+export default function dataAlertArray1(data, time, max) {
     return {
-        title : {
+        title: {
             // text: '用户数量面积图',
             // subtext: '数据来自西安兰特水电测控技术有限公司',
             // x: 'center',
@@ -12,7 +12,7 @@ export default function dataAlertArray1(data,time) {
         //         saveAsImage: {}
         //     }
         // },
-        tooltip : {
+        tooltip: {
             trigger: 'axis',
             axisPointer: {
                 type: 'cross',
@@ -40,16 +40,22 @@ export default function dataAlertArray1(data,time) {
             type: 'category',
             data: time,
         },
-        yAxis: {
-            name: 'value',
-            type: 'value'
-        },
+        yAxis: [{
+            // name: 'value',
+            // type: 'value'
+        }],
         series: [{
-            name:'value',
+            name: 'value',
             data: data,
             // areaStyle: {},
             type: 'line',
-            smooth: true
+            smooth: true,
+            markLine: {
+                data: [
+                    // {type: 'max', name: '阈值'},
+                    {yAxis: max}
+                ]
+            }
         }]
     };
 }

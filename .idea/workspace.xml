@@ -3,17 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="474f264f-c4c6-4480-bc5f-5c0be6b1e853" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change beforePath="$PROJECT_DIR$/assets/src/echarts/data.js" afterPath="$PROJECT_DIR$/assets/src/echarts/data.js" />
-      <change beforePath="$PROJECT_DIR$/assets/src/echarts/date.js" afterPath="$PROJECT_DIR$/assets/src/echarts/date.js" />
-      <change beforePath="$PROJECT_DIR$/assets/src/echarts/user/userDistribution.js" afterPath="$PROJECT_DIR$/assets/src/echarts/user/userDistribution.js" />
-      <change beforePath="$PROJECT_DIR$/assets/src/echarts/user/userGrowth.js" afterPath="$PROJECT_DIR$/assets/src/echarts/user/userGrowth.js" />
-      <change beforePath="$PROJECT_DIR$/assets/src/echarts/user/userTotal.js" afterPath="$PROJECT_DIR$/assets/src/echarts/user/userTotal.js" />
-      <change beforePath="$PROJECT_DIR$/assets/src/page/authorityManagement.jsx" afterPath="$PROJECT_DIR$/assets/src/page/authorityManagement.jsx" />
-      <change beforePath="$PROJECT_DIR$/assets/src/page/clusterControl.jsx" afterPath="$PROJECT_DIR$/assets/src/page/clusterControl.jsx" />
+      <change beforePath="$PROJECT_DIR$/assets/src/echarts/dataAlert/array1.js" afterPath="$PROJECT_DIR$/assets/src/echarts/dataAlert/array1.js" />
       <change beforePath="$PROJECT_DIR$/assets/src/page/dataAlert.jsx" afterPath="$PROJECT_DIR$/assets/src/page/dataAlert.jsx" />
-      <change beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
-      <change beforePath="$PROJECT_DIR$/interface/kafka.js" afterPath="$PROJECT_DIR$/interface/cluterControl.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dataAlert.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dataAlert.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/src/page/dataAlert.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+            <state relative-caret-position="303">
+              <caret line="59" column="26" lean-forward="false" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -39,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="array1.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="array1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/src/echarts/dataAlert/array1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -174,9 +165,9 @@
         <option value="$PROJECT_DIR$/assets/src/echarts/data.js" />
         <option value="$PROJECT_DIR$/assets/src/echarts/user/userGrowth.js" />
         <option value="$PROJECT_DIR$/assets/src/echarts/user/userTotal.js" />
-        <option value="$PROJECT_DIR$/assets/src/page/dataAlert.jsx" />
         <option value="$PROJECT_DIR$/assets/src/echarts/date.js" />
         <option value="$PROJECT_DIR$/assets/src/echarts/dataAlert/array1.js" />
+        <option value="$PROJECT_DIR$/assets/src/page/dataAlert.jsx" />
       </list>
     </option>
   </component>
@@ -238,6 +229,14 @@
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="echarts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nietzsche" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nietzsche" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="echarts" type="462c0819:PsiDirectoryNode" />
+              <item name="dataAlert" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Nietzsche" type="b2602c69:ProjectViewProjectNode" />
@@ -318,12 +317,12 @@
       <workItem from="1524748212142" duration="26408000" />
       <workItem from="1526547917597" duration="9227000" />
       <workItem from="1526623434599" duration="10000" />
-      <workItem from="1526623472668" duration="20842000" />
+      <workItem from="1526623472668" duration="22151000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62618000" />
+    <option name="totallyTimeSpent" value="63927000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -347,7 +346,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24183796" sideWeight="0.49753347" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24183796" sideWeight="0.49753347" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -765,16 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/src/page/dataAlert.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/src/echarts/date.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -785,9 +774,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/src/echarts/dataAlert/array1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/src/page/dataAlert.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="59" column="26" lean-forward="false" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -57,7 +57,7 @@ class PageDataAlert extends Component {
                     array1: array1,
                     array1Value: array1Value,
                     array1Time:array1Time,
-                    arrayMax: max,
+                    array1Max: max,
                 })
             })
             .catch(function (err) {
@@ -82,7 +82,7 @@ class PageDataAlert extends Component {
                                   onClick={() => this.startWatchArray1(0)}/>
                     <RaisedButton label="结束监控" secondary={true} onClick={() => this.endWatchArray1(0)}/>
                     <ReactEcharts
-                        option={dataAlertArray1(this.state.array1Value,this.state.array1Time)}
+                        option={dataAlertArray1(this.state.array1Value,this.state.array1Time,this.state.array1Max)}
                         key={'用户总数'}
                     />
                 </div>
