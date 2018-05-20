@@ -5,6 +5,8 @@ import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 import Snackbar from 'material-ui/Snackbar';
 import '../App.css';
+import axios from 'axios';
+import config from "../config";
 
 class PageClusterControl extends Component {
     constructor(props) {
@@ -16,7 +18,7 @@ class PageClusterControl extends Component {
                 id: '',
                 action: '',
             },
-            snackbar:false,
+            snackbar: false,
         }
     }
 
@@ -39,17 +41,29 @@ class PageClusterControl extends Component {
         });
     };
     submit = () => {
-        let that=this;
+        let that = this;
         let status = Object.assign([], this.state.status);
         status[this.state.dialog.id] = this.state.dialog.action;
         setTimeout(function () {
+                axios.get(
+                    config.ip + '/cluterControl',
+                    {
+                        params: {
+                            topic:'集群控制',
+                            id: that.state.dialog.id,
+                            action:that.state.dialog.action,
+                        }
+                    })
+                    .then(function (res) {
+                        console.log(res);
+                    })
                 that.setState({
                     status: status,
                     open: false,
-                    snackbar:true,
+                    snackbar: true,
                 })
             }
-            , 1000);
+            , 1);
     };
 
 
@@ -80,7 +94,7 @@ class PageClusterControl extends Component {
                 </Dialog>
                 <Snackbar
                     open={this.state.snackbar}
-                    message={'集群'+this.state.dialog.id+'已经被'+this.state.dialog.action}
+                    message={'集群' + this.state.dialog.id + '已经被' + this.state.dialog.action}
                     autoHideDuration={4000}
                     onRequestClose={this.handleRequestClose}
                 />

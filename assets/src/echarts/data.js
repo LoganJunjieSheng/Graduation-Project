@@ -21,13 +21,14 @@ let myData = {
             start = start + change;
             array.push(Math.floor(start));
         }
-        let proportion=[];
+        let proportion = [];
         for (let i = 0; i <= length; i++) {
-          let change=100*array[i]/array[i-7];
-          proportion.push(change);
+            let change = 100 * array[i] / array[i - 7];
+            proportion.push(change);
         }
         return proportion;
-    }
+    },
+
 
 };
 export default myData

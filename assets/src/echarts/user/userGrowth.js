@@ -41,7 +41,7 @@ export default function userGrowth() {
         xAxis: {
             name: '日期',
             type: 'category',
-            data: myDate(),
+            data: myDate.createFakeDate(),
         },
         yAxis: {
             name: '百分比',

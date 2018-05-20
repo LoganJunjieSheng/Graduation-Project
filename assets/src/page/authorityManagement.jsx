@@ -7,7 +7,6 @@ import Snackbar from 'material-ui/Snackbar';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 import '../App.css';
-
 class PageAuthorityManagement extends Component {
     constructor(props) {
         super(props);

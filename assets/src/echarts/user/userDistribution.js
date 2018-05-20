@@ -22,6 +22,13 @@ export default function userDistribution() {
             realtime: false,
             calculable: true,
         },
+        grid: {
+            top: '0%',
+            left: '0%',
+            right: '0%',
+            bottom: '0%',
+            containLabel: true
+        },
         series: [
             {
                 // name: '人数',

@@ -5,7 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var kafka = require('./interface/kafka');
+var cluterControl = require('./interface/cluterControl');
+var dataAlert=require('./interface/dataAlert');
 var app = express();
 
 // view engine setup
@@ -30,7 +31,8 @@ var allowCrossDomain = function (req, res, next) {
 app.use(allowCrossDomain);
 //路由
 app.use('/', indexRouter);
-app.use('/kafka', kafka);
+app.use('/cluterControl', cluterControl);
+app.use('/dataAlert',dataAlert );
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

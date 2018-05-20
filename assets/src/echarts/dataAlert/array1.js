@@ -1,19 +1,17 @@
-import myDate from '../date'
-import myData from '../data'
-export default function userTotal() {
+export default function dataAlertArray1(data,time) {
     return {
         title : {
-            text: '用户数量面积图',
+            // text: '用户数量面积图',
             // subtext: '数据来自西安兰特水电测控技术有限公司',
-            x: 'center',
-            align: 'right'
+            // x: 'center',
+            // align: 'right'
         },
-        toolbox: {
-            feature: {
-                restore: {},
-                saveAsImage: {}
-            }
-        },
+        // toolbox: {
+        //     feature: {
+        //         restore: {},
+        //         saveAsImage: {}
+        //     }
+        // },
         tooltip : {
             trigger: 'axis',
             axisPointer: {
@@ -24,10 +22,10 @@ export default function userTotal() {
                 }
             }
         },
-        legend: {
-            data:['用户人数'],
-            x: 'left'
-        },
+        // legend: {
+        //     data:['用户人数'],
+        //     x: 'left'
+        // },
         dataZoom: [
             {
                 show: true,
@@ -40,16 +38,16 @@ export default function userTotal() {
         ],
         xAxis: {
             type: 'category',
-            data: myDate.createFakeDate(),
+            data: time,
         },
         yAxis: {
-            name: '总用户(人)',
+            name: 'value',
             type: 'value'
         },
         series: [{
-            name:'用户人数',
-            data:  myData.total(1000,360,0.05),
-            areaStyle: {},
+            name:'value',
+            data: data,
+            // areaStyle: {},
             type: 'line',
             smooth: true
         }]
