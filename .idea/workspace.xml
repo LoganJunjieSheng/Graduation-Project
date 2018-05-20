@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="474f264f-c4c6-4480-bc5f-5c0be6b1e853" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/assets/src/echarts/dataAlert/array1.js" afterPath="$PROJECT_DIR$/assets/src/echarts/dataAlert/array1.js" />
       <change beforePath="$PROJECT_DIR$/assets/src/page/dataAlert.jsx" afterPath="$PROJECT_DIR$/assets/src/page/dataAlert.jsx" />
+      <change beforePath="$PROJECT_DIR$/interface/dataAlert.js" afterPath="$PROJECT_DIR$/interface/dataAlert.js" />
+      <change beforePath="$PROJECT_DIR$/method/file.js" afterPath="$PROJECT_DIR$/method/file.js" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dataAlert.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dataAlert.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/src/page/dataAlert.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="59" column="26" lean-forward="false" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+            <state relative-caret-position="327">
+              <caret line="64" column="56" lean-forward="false" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -30,31 +33,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="array1.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/src/echarts/dataAlert/array1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="date.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/src/echarts/date.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="92" lean-forward="false" selection-start-line="20" selection-start-column="92" selection-end-line="20" selection-end-column="92" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="file.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/method/file.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mail.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/method/mail.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="41" lean-forward="false" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -63,41 +56,9 @@
       <file leaf-file-name="dataAlert.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interface/dataAlert.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kafka.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/method/kafka.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="23" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="22" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cluterControl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/cluterControl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-61">
-              <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-              <folding>
-                <element signature="e#1363#1609#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -119,6 +80,7 @@
       <find>bootstrap/dist/css/bootstrap.css</find>
       <find>FlatButton</find>
       <find>RaisedButton</find>
+      <find>axios.g</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,14 +122,15 @@
         <option value="$PROJECT_DIR$/interface/test.js" />
         <option value="$PROJECT_DIR$/method/test.js" />
         <option value="$PROJECT_DIR$/method/watchFile.js" />
-        <option value="$PROJECT_DIR$/interface/dataAlert.js" />
-        <option value="$PROJECT_DIR$/method/file.js" />
         <option value="$PROJECT_DIR$/assets/src/echarts/data.js" />
         <option value="$PROJECT_DIR$/assets/src/echarts/user/userGrowth.js" />
         <option value="$PROJECT_DIR$/assets/src/echarts/user/userTotal.js" />
         <option value="$PROJECT_DIR$/assets/src/echarts/date.js" />
         <option value="$PROJECT_DIR$/assets/src/echarts/dataAlert/array1.js" />
+        <option value="$PROJECT_DIR$/interface/dataAlert.js" />
         <option value="$PROJECT_DIR$/assets/src/page/dataAlert.jsx" />
+        <option value="$PROJECT_DIR$/method/mail.js" />
+        <option value="$PROJECT_DIR$/method/file.js" />
       </list>
     </option>
   </component>
@@ -211,40 +174,6 @@
             <path>
               <item name="Nietzsche" type="b2602c69:ProjectViewProjectNode" />
               <item name="Nietzsche" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Nietzsche" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Nietzsche" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Nietzsche" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Nietzsche" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Nietzsche" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Nietzsche" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="echarts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Nietzsche" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Nietzsche" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="echarts" type="462c0819:PsiDirectoryNode" />
-              <item name="dataAlert" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Nietzsche" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Nietzsche" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="echarts" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Nietzsche" type="b2602c69:ProjectViewProjectNode" />
@@ -317,12 +246,12 @@
       <workItem from="1524748212142" duration="26408000" />
       <workItem from="1526547917597" duration="9227000" />
       <workItem from="1526623434599" duration="10000" />
-      <workItem from="1526623472668" duration="22151000" />
+      <workItem from="1526623472668" duration="27702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63927000" />
+    <option name="totallyTimeSpent" value="69478000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,7 +275,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24183796" sideWeight="0.49753347" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28778717" sideWeight="0.49753347" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -370,13 +299,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/src/page/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/src/components/nav.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -454,7 +376,7 @@
         <state relative-caret-position="480">
           <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -658,14 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/cluterControl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-61">
@@ -684,20 +598,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/method/kafka.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="22" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/src/page/authorityManagement.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="130" column="110" lean-forward="false" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="110" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -710,20 +616,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/dataAlert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/src/page/dataVisualization.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -733,7 +631,7 @@
         <state relative-caret-position="372">
           <caret line="43" column="41" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -751,16 +649,8 @@
         <state relative-caret-position="630">
           <caret line="42" column="41" lean-forward="false" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/method/file.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -780,13 +670,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/interface/cluterControl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="46" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/dataAlert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/method/kafka.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/src/page/dataAlert.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="59" column="26" lean-forward="false" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+        <state relative-caret-position="327">
+          <caret line="64" column="56" lean-forward="false" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/method/file.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/method/mail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="41" lean-forward="false" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>

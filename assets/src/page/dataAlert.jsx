@@ -6,58 +6,54 @@ import RaisedButton from 'material-ui/RaisedButton';
 import ReactEcharts from 'echarts-for-react';
 import dataAlertArray1 from "../echarts/dataAlert/array1";
 import myDate from '../echarts/date';
+
 class PageDataAlert extends Component {
     constructor(props) {
         super(props);
         this.state = {
             array1: [],
             array1Value: [],
-            array1Time:[],
+            array1Time: [],
             array1Max: 0,
             arrayControl: null,
+            // over: 0,//0未超过阈值，1超过阈值
+            preValue: NaN,//上次超过max的value
         }
     }
 
     getArray1 = () => {
         const that = this;
-        axios.get(config.ip + '/dataAlert')
+        axios.get(config.ip + '/dataAlert',
+            {
+                params: {
+                    // over: that.state.over,
+                    preValue: that.state.preValue,
+                }
+            })
             .then(function (res) {
                 const data = res.data.data;
-                const time=res.data.time;
-                // console.log(time);
-                const idStart = data.indexOf('id:\'') + 4;
-                const idEnd = data.indexOf('\',');
-                const id = data.substring(idStart, idEnd);
-                // console.log(idStart);
-                // console.log(idEnd);
-                // console.log(id);
-                const valueStart = data.indexOf('value:\'') + 7;
-                const valueEnd = data.indexOf('\',', idEnd + 2);
-                const value = data.substring(valueStart, valueEnd);
-                // console.log(valueStart);
-                // console.log(valueEnd);
-                // console.log(value);
-                const maxStart = data.indexOf('max:\'') + 5;
-                const maxEnd = data.indexOf('\',', valueEnd + 2);
-                const max = data.substring(maxStart, maxEnd);
-                // console.log(valueStart);
-                // console.log(valueEnd);
-                // console.log(max);
+                // console.log(data);
+                const time = res.data.time;
+                // const over = res.data.over;
+                const preValue = res.data.preValue;
                 let array1 = Object.assign([], that.state.array1);
                 let array1Value = Object.assign([], that.state.array1Value);
                 let array1Time = Object.assign([], that.state.array1Time);
                 array1.push({
-                    id: id,
-                    value: value,
-                    max: max,
+                    id: data.id,
+                    value: data.value,
+                    max: data.max,
                 });
-                array1Value.push(value);
+                array1Value.push(data.value);
                 array1Time.push(myDate.timestamp(time));
+                console.log(data.max)
                 that.setState({
                     array1: array1,
                     array1Value: array1Value,
-                    array1Time:array1Time,
-                    array1Max: max,
+                    array1Time: array1Time,
+                    array1Max: data.max,
+                    // over: over,
+                    preValue: preValue,
                 })
             })
             .catch(function (err) {
@@ -66,7 +62,7 @@ class PageDataAlert extends Component {
         // console.log(this.state.array1)
     };
     startWatchArray1 = () => {
-        let arrayControl = setInterval(this.getArray1, 1000);
+        let arrayControl = setInterval(this.getArray1, 5000);
         this.setState({arrayControl: arrayControl})
     };
     endWatchArray1 = () => {
@@ -82,7 +78,7 @@ class PageDataAlert extends Component {
                                   onClick={() => this.startWatchArray1(0)}/>
                     <RaisedButton label="结束监控" secondary={true} onClick={() => this.endWatchArray1(0)}/>
                     <ReactEcharts
-                        option={dataAlertArray1(this.state.array1Value,this.state.array1Time,this.state.array1Max)}
+                        option={dataAlertArray1(this.state.array1Value, this.state.array1Time, this.state.array1Max)}
                         key={'用户总数'}
                     />
                 </div>

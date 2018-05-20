@@ -1,14 +1,56 @@
 let myFile = {
-    readFile: (res) => {
-        console.log('开始读取文件')
+    readFile: (res, req) => {
         const fs = require('fs');
         const path = require('path');
-        fs.readFile(path.join('/Users/junjiesheng/Desktop/', 'test.js'),{encoding:'utf-8'}, function (err,data) {
+        const myMail=require('./mail');
+        fs.readFile(path.join('/Users/junjiesheng/Desktop/', 'test.js'), {encoding: 'utf-8'}, function (err, data) {
             if (err) throw err;
+            //提取数据
+            const idStart = data.indexOf('id:\'') + 4;
+            const idEnd = data.indexOf('\',');
+            const id = data.substring(idStart, idEnd);
+            // console.log(idStart);
+            // console.log(idEnd);
+            // console.log(id);
+            const valueStart = data.indexOf('value:\'') + 7;
+            const valueEnd = data.indexOf('\',', idEnd + 2);
+            const value = parseInt(data.substring(valueStart, valueEnd));
+            // console.log(valueStart);
+            // console.log(valueEnd);
+            // console.log(value);
+            const maxStart = data.indexOf('max:\'') + 5;
+            const maxEnd = data.indexOf('\',', valueEnd + 2);
+            const max = parseInt(data.substring(maxStart, maxEnd));
+            // console.log(valueStart);
+            // console.log(valueEnd);
+            // console.log(max);
+            //读取req
+            // let over=req.query.over;
+            let preValue = parseInt(req.query.preValue);
+            if (value > max) {
+                console.log('超过阈值');
+                // console.log(value);
+                // console.log(preValue);
+                if (value !== preValue) {
+                    myMail.sendMail();
+                    preValue = value;
+                } else {
+                    // preValue=NaN;
+                }
+            } else {
+
+            }
+            const resData = {
+                id: id,
+                value: value,
+                max: max,
+            };
+
             res.json({
                 status: '0',
-                data: data,
-                time:Date.parse(new Date()),
+                data: resData,
+                time: Date.parse(new Date()),
+                preValue: preValue,
             });
         });
     }
