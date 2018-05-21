@@ -62,7 +62,7 @@ class PageDataAlert extends Component {
         // console.log(this.state.array1)
     };
     startWatchArray1 = () => {
-        let arrayControl = setInterval(this.getArray1, 5000);
+        let arrayControl = setInterval(this.getArray1, 3000);
         this.setState({arrayControl: arrayControl})
     };
     endWatchArray1 = () => {

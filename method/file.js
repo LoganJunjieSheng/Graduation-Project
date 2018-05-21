@@ -2,7 +2,7 @@ let myFile = {
     readFile: (res, req) => {
         const fs = require('fs');
         const path = require('path');
-        const myMail=require('./mail');
+        const myMail = require('./mail');
         fs.readFile(path.join('/Users/junjiesheng/Desktop/', 'test.js'), {encoding: 'utf-8'}, function (err, data) {
             if (err) throw err;
             //提取数据
@@ -32,7 +32,15 @@ let myFile = {
                 // console.log(value);
                 // console.log(preValue);
                 if (value !== preValue) {
-                    myMail.sendMail();
+                    let html = '<div>' +
+                        '<div>id:'+id+'</div>'+
+                        '<div>value:'+value+'</div>'+
+                        '<div>max:'+max+'</div>'+
+                        '</div>';
+                    myMail.send('logan_junjiesheng@163.com',
+                        'Edison数据警报',
+                        'text',
+                        html);
                     preValue = value;
                 } else {
                     // preValue=NaN;
